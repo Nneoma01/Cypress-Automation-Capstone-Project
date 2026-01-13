@@ -1,0 +1,8 @@
+{
+   "userData": {
+      "validEmail": "demo@demo.com",
+      "validPassword": "demo",
+      "invalidEmail": "invalid_user",
+      "invalidPassword": "password"
+   }
+}
