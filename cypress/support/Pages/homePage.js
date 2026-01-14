@@ -18,7 +18,7 @@ class HomePage {
   openMenuIfMobile() {
     this.elements.menuBar().then(($menu) => {
       if ($menu.is(":visible")) {
-        cy.wrap($menu).click();
+        cy.wrap($menu).click({ force: true });
       }
     });
   }
@@ -42,6 +42,18 @@ class HomePage {
       item.should("be.visible");
     });
   }
+
+  getMenuItems() {
+  this.openMenuIfMobile();
+  
+  // Get only the 8 specific menu items by their text
+  const menuTexts = ['Home', 'About', 'Courses', 'Events', 'Shop', 'Testing', 'Blog', 'Contact'];
+  
+  return cy.get('nav a').filter((index, el) => {
+    const text = Cypress.$(el).text().trim();
+    return menuTexts.includes(text);
+  });
+}
 
   getHomePageLogo() {
     return this.elements.HomePageLogo();

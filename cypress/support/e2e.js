@@ -17,5 +17,13 @@
 import './commands'
 
 Cypress.on('uncaught:exception', (err, runnable) => {
-  return false
+   if (err.message.includes("owlCarousel")) {
+    return false;
+  }
+
+   if (err.message.includes("is not a function")) {
+    return false;
+  }
+
+  return true
 })
