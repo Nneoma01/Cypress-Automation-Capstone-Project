@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx cypress run",
     "test:headed": "npx cypress run --headed && allure generate --single-file ./allure-results -o cypress/reports"
   },
   "keywords": [],
