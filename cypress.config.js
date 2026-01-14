@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-const { allureCypress } = require("allure-cypress/reporter");
+// const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
   defaultCommandTimeout: 60000,
@@ -9,9 +9,10 @@ module.exports = defineConfig({
     baseURL: "https://shop.qaautomationlabs.com/index.php",
     setupNodeEvents(on, config) {
       // implement node event listeners here
-       allureCypress(on, config, {
-        resultsDir: "allure-results",
-      });
+      //  allureCypress(on, config, {
+      //   resultsDir: "allure-results",
+      // });
+      require("allure-cypress/reporter")(on);
       return config;
     },
   },
