@@ -12,7 +12,7 @@ module.exports = defineConfig({
       //  allureCypress(on, config, {
       //   resultsDir: "allure-results",
       // });
-      require("allure-cypress/reporter")(on);
+      // require("allure-cypress/reporter")(on);
       return config;
     },
   },
