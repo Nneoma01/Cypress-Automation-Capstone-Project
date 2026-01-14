@@ -10,8 +10,7 @@ describe("Validate shopping categories", function () {
   
 
   it("Validate women wear shopping category", function () {
-    shopPage.clickShopDropdown();
-    cy.wait(2000);
+    shopPage.clickShopDropdown();    
     shopPage.clickWomenWearCategory();
     shopPage.itemDetails();
     // validate correct product listing per category and validate prices
@@ -24,7 +23,6 @@ describe("Validate shopping categories", function () {
 
   it("Validate men wear shopping category", function () {
     shopPage.clickShopDropdown();
-    cy.wait(2000);
     shopPage.clickMenWearCategory();
     shopPage.itemDetails();
     // validate correct product listing per category and validate prices
@@ -37,7 +35,6 @@ describe("Validate shopping categories", function () {
 
   it("Validate kids wear shopping category", function () {
     shopPage.clickShopDropdown();
-    cy.wait(2000);
     shopPage.clickKidsWearCategory();
     shopPage.itemDetails();
     // validate correct product listing per category and validate prices
@@ -50,7 +47,6 @@ describe("Validate shopping categories", function () {
 
   it("Validate electronics shopping category", function () {
     shopPage.clickShopDropdown();
-    cy.wait(2000);
     shopPage.clickElectronicsCategory();
     shopPage.itemDetails();
     // validate correct product listing per category and validate prices

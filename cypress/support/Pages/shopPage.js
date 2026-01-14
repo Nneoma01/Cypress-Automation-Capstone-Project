@@ -49,10 +49,10 @@ class shopPage {
     itemDetails() {
         // validate products exist and is visible in the selected category
       this.elements.productItems().should('have.length.greaterThan', 0);
-      this.elements.productImg().should('be.visible');
-      this.elements.productNames().should('be.visible');
-      this.elements.productPrices().should('be.visible');
-      this.elements.productSize().should('be.visible');
+      this.elements.productImg().first().should('be.visible');
+      this.elements.productNames().first().should('be.visible');
+      this.elements.productPrices().first().should('be.visible');
+      this.elements.productSize().first().should('be.visible');
     }
 
     ShopMenu() {

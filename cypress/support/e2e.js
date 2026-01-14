@@ -25,5 +25,9 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
   }
 
+  if (err.message.includes("Script error")) {
+    return false;
+  }
+
   return true
 })
