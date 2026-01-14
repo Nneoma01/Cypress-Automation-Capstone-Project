@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "test:headed": "npx cypress run --headed && allure generate --single-file ./allure-results -o cypress/reports"
+    "test": "npx cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "allure-commandline": "^2.36.0",
-    "allure-cypress": "^3.4.5",
     "cypress": "^14.5.4"
   }
 }
