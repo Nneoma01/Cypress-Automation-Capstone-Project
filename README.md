@@ -7,8 +7,8 @@ The framework is designed to be scalable, maintainable, and CI-ready, following 
 Application Under Test (AUT)
 The application under test is QA Automation Labs, an educational platform that provides learning resources, blog content, and an integrated e-commerce experience.
 Primary URLs tested:
-1. https://qaautomationlabs.com/
-2. https://shop.qaautomationlabs.com/
+1. https://shop.qaautomationlabs.com/
+2. https://qaautomationlabs.com/
 
 Key features tested include:
 1. Homepage navigation and menu validation
